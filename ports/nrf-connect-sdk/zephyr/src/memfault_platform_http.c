@@ -96,7 +96,7 @@ static bool prv_install_cert(eMemfaultRootCert cert_id) {
       return -1;
   }
 
-  return memfault_root_cert_storage_add(cert_id, cert, cert_len);
+  return memfault_root_cert_storage_add(cert_id, cert, cert_len + 1);
 }
 
 int memfault_nrfconnect_port_install_root_certs(void) {
