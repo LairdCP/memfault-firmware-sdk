@@ -135,7 +135,7 @@ static eMemfaultRebootReason prv_decode_reset_resetreas(uint32_t reset_cause) {
 }
 #endif
 
-MEMFAULT_WEAK
+
 void memfault_reboot_reason_get(sResetBootupInfo *info) {
   MEMFAULT_SDK_ASSERT(info != NULL);
 
